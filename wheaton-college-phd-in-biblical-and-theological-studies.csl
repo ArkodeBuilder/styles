@@ -25,10 +25,14 @@
       <name>Daniel Owens</name>
       <email>dhowens@pmbx.net</email>
     </contributor>
+    <contributor>
+      <name>Noah Hoech</name>
+      <email>noah.hoech@gmail.com</email>
+    </contributor>
     <category citation-format="note"/>
     <category field="theology"/>
     <summary>Wheaton PhD based on CMS (Full Note with Bibliography)</summary>
-    <updated>2012-10-25T21:15:26+00:00</updated>
+    <updated>2015-01-24T15:23:58+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -227,10 +231,10 @@
         <text variable="genre"/>
       </if>
       <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" font-style="italic"/>
+        <text variable="title" font-style="italic" text-case="title"/>
       </else-if>
       <else>
-        <text variable="title" quotes="true"/>
+        <text variable="title" quotes="true" text-case="title"/>
       </else>
     </choose>
   </macro>
@@ -244,10 +248,10 @@
         </choose>
       </if>
       <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" font-style="italic"/>
+        <text variable="title" font-style="italic" text-case="title"/>
       </else-if>
       <else>
-        <text variable="title" quotes="true"/>
+        <text variable="title" quotes="true" text-case="title"/>
       </else>
     </choose>
   </macro>
@@ -267,10 +271,10 @@
         </choose>
       </if>
       <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" form="short" font-style="italic"/>
+        <text variable="title" form="short" font-style="italic" text-case="title"/>
       </else-if>
       <else>
-        <text variable="title" form="short" quotes="true"/>
+        <text variable="title" form="short" quotes="true" text-case="title"/>
       </else>
     </choose>
   </macro>
